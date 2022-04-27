@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let items = (0...100).map { $0 }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        CustomGrid(columns: 3, items: items) { item, sideSize  in
+            VStack {
+                Text("\(item)")
+            }
+            .frame(width: sideSize, height: sideSize)
+            .foregroundColor(.white)
+            .font(.title)
+            .background(Color.red)
+        }
     }
 }
 
