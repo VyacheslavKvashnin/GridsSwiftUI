@@ -22,3 +22,4 @@ CustomGridView(items: activeAwards, columns: 2) { itemSize, award in
 }
 ```
 
+<img src = "https://user-images.githubusercontent.com/101284761/167266444-42b105ae-c8b8-47a4-a41d-aa40ee66f410.png" width = "300">
